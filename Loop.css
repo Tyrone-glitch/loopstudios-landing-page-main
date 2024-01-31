@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ham {
+    display: none;
+}
+
+header {
+    background: url(/images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 70vh;
+    padding-block: 5vh;
+    padding-inline: 5vw;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-family: 'Alata', sans-serif;
+    font-weight: 100;
+}
+
+ul li::before {
+    content: "";
+    border: 2px solid rgb(35, 35, 156);
+    width: 30px;
+    display: none;
+}
+
+ul li:hover::before {
+    display: block;
+}
+
+
+ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+header p {
+    border: 1.5px solid #fff;
+    width: 35%;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10vh;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10vw;
+    padding-block: 5vh;
+}
+
+.top p{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height:20px;
+    width: 7%;
+    padding-left: 18px;
+    margin-right: 110px;
+}
+
+.top p:hover{
+  background-color: #000;
+  text-transform: capitalize;
+  color:white;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-inline: 10vw;
+  padding-block: 7vw;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-inline: 10vw;
+  padding-block: 7vw;
+}
+
+
+main div:nth-child(1){
+  background-image: url(/images/desktop/image-interactive.jpg);
+  height: 65vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55%;
+  
+}
+
+main div:nth-child(2){
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Josefin sans' sans-serif;
+  background-color: white;
+  padding: 30px 0 0 30px;
+  position: relative;
+  right:100px ;
+}
+main div:nth-child(2) h2{
+  font-size:2rem ;
+  font-family: 'Alata' sans-serif;
+  text-transform: uppercase;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 80%;
+    margin-inline: 10vw;
+    margin-bottom: 37px;
+}
+
+section div{
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+section div:nth-child(1){
+    background-image:url(/images/desktop/image-deep-earth.jpg);
+}
+
+section div:nth-child(2){
+    background-image: url(/images/desktop/image-night-arcade.jpg);
+}
+
+section div:nth-child(3){
+    background-image: url(/images/desktop/image-soccer-team.jpg);
+}
+
+section div:nth-child(4){
+    background-image: url(/images/desktop/image-grid.jpg);
+}
+
+section div:nth-child(5){
+    background-image: url(/images/desktop/image-from-above.jpg);
+}
+
+section div:nth-child(6){
+    background-image: url(/images/desktop/image-pocket-borealis.jpg);
+}
+
+section div:nth-child(7){
+    background-image: url(/images/desktop/image-curiosity.jpg);
+}
+
+section div:nth-child(8){
+    background-image: url(/images/desktop/image-fisheye.jpg);
+}
+
+section p{
+    color:white;
+    position: relative;
+    top: 300px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 19px;
+}
+
+footer {
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 35px;
+    
+  }
+  .footer-div-1{
+    align-items: start;
+    padding-bottom: 15px;
+    margin-inline: 10vw;
+  }
+  .footer-div-2{
+    align-items: end;
+    padding-bottom: 15px;
+    margin-inline: 10vw;
+  }
+
+  .footer-div-1 ul {
+    display: flex;
+    gap: 20px;
+    font-family: 'Alata', sans-serif;
+  }
+
+  .footer-div-2 ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-div-1 ul li {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footer-div-2 ul li {
+    list-style: none;
+  }
+
+  .footer-div-1 ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .anchor {
+    display: none;
+    
+  }
+
+
+
+
+      
+      
+      
+      /* Media queries for mobile devices*/
+      
+      @media (max-width: 900px) {
+
+        header {
+            background-image: url(/Images/mobile/image-hero.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-block: 6vh;
+            height: 70vh;
+        }
+      
+        header p {
+            border: 1.5px solid #fff;
+            width: 88%;
+            padding: 15px;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-top: 10vh;
+        }
+      
+        nav li {
+            display: none;
+        }
+      
+        .ham {
+            display: block;
+        }
+      
+      
+      main {
+          flex-direction: column;
+          gap: 20px;
+      }
+      
+      main div:nth-child(1) {
+          height: 35vh;
+      } 
+      
+      main div:nth-child(2) {
+          padding-left: 0;
+          padding-top: 0;
+          text-align: center;
+          position: static;
+      }
+      
+      
+      main div:nth-child(1), main div:nth-child(2) {
+          width: 100%;
+          margin: auto;
+      }
+      
+      div.top h2 {
+        padding-inline: 5vw;
+        font-size: 2rem;
+      }
+      
+      div.top p {
+        display: none;
+      }
+      
+      section {
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        margin-inline: 13vw;
+      }
+      
+      section div  p {
+        color: #fff;
+        font-size: 1.1rem;
+        position: relative;
+        top: 40px;
+        padding-left: 20px;
+      }  
+      
+      .anchor {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid black;
+        width: 30%;
+        height: 20vh;
+        padding-top: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .anchor:hover{
+        background-color: #000;
+        text-transform: capitalize;
+        color:white;
+        text-transform: uppercase;
+      }
+      
+      footer {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-div-1 ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 60px;
+      }
+      
+      .footer-div-2 ul {
+        padding-right: 60px;
+        padding-top: 15px;
+      }
+      
+      .footer-div-2 p {
+          padding-right: 5px;
+      }
+      
+      }
